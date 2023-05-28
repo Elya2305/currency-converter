@@ -1,12 +1,12 @@
 # BTC/UAH converter
 
 ### Description
-This project is a simple currency converter that allows to get current price for 1 BTC in UAH and subscribe to receive email notifications with current rate.
-The project is written is scope of [Software Engineering School](https://www.genesis-for-univ.com/genesis-software-engineering-school-3?utm_source=email_campaing&utm_medium=email&utm_campaign=se3&utm_content=free) 
+This project is a simple currency converter that allows you to get current price for 1 BTC in UAH and subscribe to receive email notifications with current rate.
+The project is written in scope of [Software Engineering School](https://www.genesis-for-univ.com/genesis-software-engineering-school-3?utm_source=email_campaing&utm_medium=email&utm_campaign=se3&utm_content=free) 
 ### Endpoints
 GET `/rate` - returns current price for 1 BTC in UAH
 
-POST `/subscribe` - subscribes user to receive email notifications that are send using /sendEmails
+POST `/subscribe` - subscribes user to receive email notifications that are sent using /sendEmails
 
 POST `/sendEmails` - sends emails to all subscribed users with current price for 1 BTC in UAH
 
@@ -23,7 +23,6 @@ To run the project locally:
 * docker run \
   -e EMAIL_FROM='\<email from>' \
   -e EMAIL_PASSWORD='\<password>' \
-  -e
   -p 9090:9090 currency-converter
 
 ### Provider
